@@ -29,7 +29,7 @@ print(profit) # returns 800
 
 /*The common solution job shuduling in greedy algorithm the algorithm first sorts the jobs based on their end time and then iterates through the jobs, keeping track of the last end time and the total profit, if a job starts after the last end time, it is added to the schedule and the last end time is updated to the end time of this job. The algorithm continues until all jobs have been processed and then the process ends*/
 
-
+/*Python program*/
 def find_max_jobs(jobs):
     jobs.sort(key=lambda x: x[1])
     n = len(jobs)
